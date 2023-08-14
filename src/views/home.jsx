@@ -1,8 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import ava from "../assets/images/happ.png"
+
+
+import RangeSlider from "rsuite/RangeSlider";
+import "rsuite/dist/rsuite.css";
+import { useState } from "react";
+
+import Dropdown from "../Components/dropdown_log";
+import Categories from "../Components/subcategorie";
+import Cost_min_max from "../Components/indicator";
+
 import logo from "../assets/images/min/logo.png";
+import Inp_fl from "../Components/filter_input"
 // import homejs from "../assets/Vanilla/Home.js";
 
 
@@ -10,15 +20,25 @@ export default function Home(){
 
 
 
+    const [firstValue, setFirstValue] = useState(120);
+    const [secondValue, setSecondValue] = useState(700);
+    function handleRanges(value) {
+    setFirstValue(value[0]);
+    setSecondValue(value[1]);
+    }
+
+
+
+
     var drawer_state = false ;
     function drw_cn_bur(){
-    if(!drawer_state){
-        drawer.style.left = "0" ;
-        drawer_state = true;
-    }else{
-        drawer.style.left = "-100%"
-        drawer_state = false;
-    }
+        if(!drawer_state){
+            drawer.style.left = "0" ;
+            drawer_state = true;
+        }else{
+            drawer.style.left = "-100%"
+            drawer_state = false;
+        }
     }
 
 
@@ -43,13 +63,18 @@ export default function Home(){
         prod_search_2.style.height = "0" ;
     }
 
+    // const [range, setRange] = React.useState([0, 100000]);
+    // function handleChanges(event, newValue) {
+    // setRange(newValue);}
+
+
 
 
      return(
         <body>
             <section className="nav">
             <label className="burger" for="burger">
-            <input type="checkbox" id="burger" onClick={drw_cn_bur}/>
+            <input type="checkbox" id="burger" onChange={drw_cn_bur}/>
             <span></span>
             <span></span>
             <span></span>
@@ -78,10 +103,8 @@ export default function Home(){
 
              </div>
             </div>
-            <div className="avater">
-                <h6>Rayen <br /> ben brahim </h6>
-                <img className="profile_img" src={ava} alt="avatar" />
-            </div>
+
+            <Dropdown/>
             </section>
              
             <section className="drawer" id="drawer">
@@ -92,9 +115,15 @@ export default function Home(){
                 <div className="filter">
                     <span>filter</span>
                 </div>
-                <div className="categorie">
-        
+                    <Inp_fl/>
+                    <Cost_min_max/>
+                    <RangeSlider className="fillter_range_cost" min={0} max={1000} defaultValue={[120, 600]} onChange={handleRanges} /> 
+                    <h6 className="para_range_fill">price between <font className="green_font"> {firstValue } Dt</font> and <font className="green_font">{secondValue } dt</font></h6>
+                <div className="categories">
+                     <span>categories</span>
                 </div>
+                <Categories/>
+
             </section>
 
             <section className="main">
