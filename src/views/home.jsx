@@ -7,12 +7,14 @@ import RangeSlider from "rsuite/RangeSlider";
 import "rsuite/dist/rsuite.css";
 import { useState } from "react";
 
-import Dropdown from "../Components/dropdown_log";
-import Categories from "../Components/subcategorie";
-import Cost_min_max from "../Components/indicator";
+
+import DropTag from "../Components/comp_hub_0/dropdown_tag";
+import DropLog from "../Components/comp_hub_0/dropdown_log";
+import Categories from "../Components/comp_hub_0/subcategorie";
+import Cost_min_max from "../Components/comp_hub_0/indicator";
+import Inp_fl from "../Components/comp_hub_0/filter_input";
 
 import logo from "../assets/images/min/logo.png";
-import Inp_fl from "../Components/filter_input"
 // import homejs from "../assets/Vanilla/Home.js";
 
 
@@ -79,9 +81,9 @@ export default function Home(){
             <span></span>
             <span></span>
             </label>
-                <h1 class="title"><img className="title_img" src={logo} alt="Afari_logo"/>BISHOP</h1>
-
+                <h1 class="title"><img className="title_img" src={logo} alt="Afari_logo"/>fari.tn</h1>
                 <div className="subnav">
+                <DropTag/>
             <form className="form_search">
              <button>
              <svg width="17" height="16" fill="none" role="img" aria-labelledby="search">
@@ -104,7 +106,7 @@ export default function Home(){
              </div>
             </div>
 
-            <Dropdown/>
+            <DropLog/>
             </section>
              
             <section className="drawer" id="drawer">

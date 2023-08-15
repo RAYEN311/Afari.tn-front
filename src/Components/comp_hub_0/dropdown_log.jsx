@@ -1,25 +1,11 @@
 import React from "react"
 import ReactDOM  from "react-dom"
 
-import './styles/dropdown_styles.css'
+import './styles/dropdown_log.css'
 
 import ava from "../../assets/images/happ.png"
 
-
-
-var droping_state = false
-// function droping(){
-//         console.log('click')
-//         if(!droping_state){
-//           document.getElementById("drop_main_state").style.opacity = "1";
-//           droping_state = true ;
-//         }
-//         else{
-//           document.getElementById("drop_main_state").style.opacity = "0";
-//           droping_state = false ; 
-//         }
-// }
-export default function Dropdown(){
+export default function DropLog(){
 return(
         
         <>
