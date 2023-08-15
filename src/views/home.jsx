@@ -79,7 +79,7 @@ export default function Home(){
             <span></span>
             <span></span>
             </label>
-                <h1 class="title"><img className="title_img" src={logo} alt="Afari_logo"/>fari.tn</h1>
+                <h1 class="title"><img className="title_img" src={logo} alt="Afari_logo"/>BISHOP</h1>
 
                 <div className="subnav">
             <form className="form_search">
