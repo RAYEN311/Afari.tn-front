@@ -4,7 +4,7 @@ import './styles/dropdown_tag.css'
 
 export default function DropTag(){
     return(
-<button class="menu__icon">
+<button class="menu__icon" id="droptag">
   <span></span>
   <span></span>
   <span></span>

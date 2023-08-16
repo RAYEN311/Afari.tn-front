@@ -84,6 +84,11 @@
       font-family: var(--font-titles) !important ;
       -webkit-user-select: none;
     }
+    .after_tit{
+      font-size: 2vh;
+      font-weight: 500;
+      margin-top: 1.2vh;
+    }
    .title_img{
         height: 5vh;
         width:5vh;
@@ -372,12 +377,6 @@
   .form_search .input:focus {
     outline: none;
   }
-  .form_search .input:focus ~ .menu__icon{
-    box-shadow: none;
-  }
-  .form_search .input:focus ~ .search_but{
-    box-shadow: none;
-  }
   .form_search:focus-within:before {
     transform: scale(1);
   }
@@ -393,30 +392,26 @@
       width: 17px;
     margin-top: 3px;
   }
-  .nav .subnav .search_but{
+  .search_but{
     height: 42px;
       margin-left: 10px;
-      background: var(--primary);
-      border: 1px solid whitesmoke;
-      /* border: 1px solid var(--second); */
-      color: var(--second);
+      background: var(--second);
+      border: 2px solid rgb(0, 145, 255);
+      color: var(--font_but_col);
       text-transform: uppercase;
       border-radius: 5px;
       cursor: pointer;
       padding: 0 20px 0 20px;
-      height: calc(calc( var(--nav-height) * 0.75));  
-      box-shadow: 0 0 5px 2px var(--box_shadow);
       /* box-shadow: 0 0 5px 2px var(--box_shadow); */
     }
-   .search_but:active{
-     scale: 0.95;
-   }
+
    .product_searched{
     position: absolute;
-    transform: translateY(50px);
-    height: 0px;
-    width: calc(calc( var(--main-width-computer) / 3) + 132px) ;
+    transform: translateY(9vh);
+    width: 37vw;
+    height: auto;
     background-color: var(--primary);
+    /* border: 1px solid var(--box_shadow); */
     border-radius: 3px;
     transition: height 0.5s;
 }
@@ -446,6 +441,11 @@
         --height-of-input: calc( var(--nav-height) * 0.75);
         border: 1px solid var(--box_shadow);
     }
+    .nav .subnav .search_but{
+      height: calc(calc( var(--nav-height) * 0.75) + 2px);  
+      border: none;
+      box-shadow: 0 0 3px 2px var(--box_shadow);
+    }
 }
   @media (max-width:950px) {
 
@@ -456,15 +456,22 @@
         margin-left: calc(calc(var(--nav-width) / 2 )  - calc(var(--title_wd)/2)) ;
     }
     .main .subnav{
-        display: flex;
-        justify-content: center;
-        margin-top: 2vh;
-        padding : 5vh 0 10vh 0;
-        --background-sub-nav: rgba(0, 0, 0, 0.7);
-        background: linear-gradient(var(--background-sub-nav), var(--background-sub-nav)),
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 2vh;
+      padding : 5vh 0 10vh 0;
+      --background-sub-nav: rgba(0, 0, 0, 0.7);
+      background: linear-gradient(var(--background-sub-nav), var(--background-sub-nav)),
         url("./assets/images/european-cars.png");
         background-size: cover;
-    }
+      }
+      .main .subnav section{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      }
     .nav .subnav{
         display: none;
     }
@@ -523,6 +530,8 @@
         --width-of-input: calc( var(--main-width-mobile) / 1.7);
     }
     .product_searched{
-     width: calc( var(--main-width-mobile) / 1.1) ;
+    top: 5vh;
+     width: calc( var(--main-width-mobile) / 1.15) ;
+     right: calc(calc( calc( var(--main-width-mobile) - calc( var(--main-width-mobile) / 1.15) )) / 2 ) ;
     }
   }
