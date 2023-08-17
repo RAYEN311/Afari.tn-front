@@ -1,10 +1,9 @@
 import React from "react";
 
+
+import Logo from "../comp_hub_0/logo";
 import DropLog from "../comp_hub_0/dropdown_log";
 import DropTag from "../comp_hub_0/dropdown_tag";
-
-
-import logo from "../../assets/images/min/logo.png";
 
 
 export default function Nav(porps){
@@ -31,6 +30,7 @@ export default function Nav(porps){
             drawer_state = false;
         }
     }
+    var title = 'fari'
     return(
     <section className="nav">
     <label className="burger" for="burger">
@@ -40,7 +40,7 @@ export default function Nav(porps){
     <span></span>
     </label>
     {/* <DropTag></DropTag> */}
-    <h1 class="title"><img className="title_img" src={logo} alt="Afari_logo"/>{porps.Title}<h6 className="after_tit">.TN</h6></h1>
+    <Logo Title={title}></Logo>
     <div className="subnav">
     <DropTag></DropTag>
     <form className="form_search">

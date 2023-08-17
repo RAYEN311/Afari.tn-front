@@ -530,7 +530,7 @@
         --width-of-input: calc( var(--main-width-mobile) / 1.7);
     }
     .product_searched{
-    top: 5vh;
+     transform: translateY(5vh);
      width: calc( var(--main-width-mobile) / 1.15) ;
      right: calc(calc( calc( var(--main-width-mobile) - calc( var(--main-width-mobile) / 1.15) )) / 2 ) ;
     }

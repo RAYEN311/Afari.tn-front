@@ -11,7 +11,10 @@ import Categories from "../comp_hub_0/subcategorie";
 
 
 export default function Drawer(){
-    
+    var min = 50
+    var max = 1150
+    // var [min, setmin_price] = useState();
+    // var [max, setmax_price] = useState();
     const [firstValue, setFirstValue] = useState(120);
     const [secondValue, setSecondValue] = useState(700);
     function handleRanges(value) {
@@ -28,9 +31,9 @@ export default function Drawer(){
     <span>filter</span>
 </div>
     <Inp_fl/>
-    <Cost_min_max/>
-    <RangeSlider className="fillter_range_cost" min={0} max={1000} defaultValue={[120, 600]} onChange={handleRanges} /> 
-    <h6 className="para_range_fill">price between <font className="green_font"> {firstValue } Dt</font> and <font className="green_font">{secondValue } dt</font></h6>
+    <Cost_min_max min={min} max={max}/>
+    <RangeSlider className="fillter_range_cost" min={min} max={max} defaultValue={[120, 600]} onChange={handleRanges} /> 
+    <h6 className="para_range_fill"><font className="green_font"> {firstValue } Dt</font>  ~  <font className="green_font">{secondValue } dt</font></h6>
 <div className="categories">
      <span>categories</span>
 </div>
