@@ -2,7 +2,7 @@ import React from 'react';
 import  ReactDOM  from 'react-dom';
 import "./styles/filter.css"
 import { SyntheticEvent,useState } from 'react';
-export default function Inp_fl(porps){
+export default function Inp_fl(props){
  var [min, setmin_price] = useState(0);
  var [max, setmax_price] = useState(0);
   return(

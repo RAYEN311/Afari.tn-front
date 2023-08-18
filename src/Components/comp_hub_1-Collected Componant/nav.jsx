@@ -11,13 +11,13 @@ export default function Nav(porps){
     function prod_state_I()
     {
         prod_search_1.style.minHeight = "40px"
-        droptag.style.boxShadow = "0 0 0 0 black"
+        droptag.style.boxShadow = "none"
     }
     function prod_state_II()
     {
         prod_search_1.style.minHeight = "0"
         prod_search_1.style.height = "0" ;
-        droptag.style.boxShadow = "0 0 5px 2px var(--box_shadow)"
+        droptag.style.cssText = "0 0 5px 2px var(--box_shadow)"
     }
     
     var drawer_state = false ;

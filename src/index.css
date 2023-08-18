@@ -13,11 +13,17 @@
     /* --drawer_pos: -100% ; */
 
 
-
+    /* font familys types  */
+    
     --font-titles: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --font-buttons: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif ; 
     --font-text-para: system-ui, Arial, sans-serif ; 
-
+    
+    /* font sizes */
+    
+    --font-tit-SIZE:  24PX;
+    --font-BUTTON-SIZE: 16PX;
+    --font-PARA-SIZE: 12PX ;
 
     --scale-y: 1 ;
 
@@ -83,6 +89,7 @@
       font-size: 4vh;
       font-family: var(--font-titles) !important ;
       -webkit-user-select: none;
+      cursor: pointer;
     }
     .after_tit{
       font-size: 2vh;
@@ -221,6 +228,36 @@
         z-index: 250;
         transition: left 0.5s ;
     }
+    .flitring{
+      margin: auto;
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      width: 97%;
+      padding-left: 5px;
+      height: 35px;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .flitring .wave-group {
+      width: calc( var(--drawer-width-computer) / 2.25);
+      color: grey !important;;
+    }
+    .flitring .app_filter{
+      margin-top: 17px;
+      margin-right: 10px;
+      border:1px solid var(--box_shadow);
+      background-color: transparent;
+      height: 34px;
+      width: 40%;
+      border-radius: 5px;
+    }
+    .flitring .app_filter:active{
+      scale: 0.95;
+      border: 1px solid green;
+    }
+
     #drawer::-webkit-scrollbar-track
     {
         /* -webkit-box-shadow: inset 0 0 6px rgba(126, 126, 126, 0.507); */
@@ -252,10 +289,36 @@
         z-index: 10000;
         /* box-shadow: 0 1px 3px 1px var(--box_shadow); */
     }
+    .intro_bellow_sett{
+      border:1px solid var(--box_shadow);
+      width: 90%;
+      font-size: var(--font-PARA-SIZE);
+      margin: auto;
+      margin-top: 8vh;
+      margin-bottom: 0;
+      color: var(--burger_col);
+      padding: 10px;
+      border-radius: 15px;
+    }
     .filter , .categories{
     padding: 1.5vh 0 1vh 0;
-    margin:8vh 1.5vh 0 1.5vh;
+    margin:1vh 1.5vh 0 1.5vh;
     border-bottom: 1px solid var(--box_shadow);
+    }
+    .filter{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .filter svg{
+      margin-top: 5px;
+      height: 24px;
+      width: 24px;
+      padding: 5px;
+      color: black;
+      border:1px solid var(--box_shadow);
+      border-radius: 50%;
+      cursor: pointer;
     }
     .categories{
       margin:3vh 1.5vh 0 1.5vh;
@@ -266,7 +329,7 @@
         color: var(--titles);
     }
     .sett_svg , .settings span , filter span{
-        height: 30px;
+        height: 26px;
         width: auto;
     
     }
@@ -521,6 +584,7 @@
     .sett_svg , .settings span , filter span{
         height: 4vh;
     }
+
     .main{
         width: var(--main-width-mobile);
         left: var( --main-left-mobile);

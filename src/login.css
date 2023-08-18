@@ -1,0 +1,79 @@
+.for_login_forum{
+    height: 90vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+.for_login_forum div{
+}
+.for_login_forum div form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border:1px solid var(--box_shadow);
+    padding: 15px;
+    border-radius:5px;
+    box-shadow: 0 0 5px 2px var(--box_shadow);
+}
+.for_login_forum div form h2{
+    color: black;
+    margin: auto;
+    font-weight: 500;
+    font-size: var(--font-tit-SIZE);
+    margin-bottom: 10px;
+}
+.for_login_forum div form svg{
+    cursor: pointer;
+    padding: 5px;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-60px, 14px);
+}
+.for_login_forum div form svg:hover{
+    background-color: var(--box_shadow);
+    color: black;
+}
+.for_login_forum div form input{
+    height: 35px;
+    width: 260px;
+    border-radius: 5px;
+    border: 1px solid var(--scrool_col);
+    background-color: rgba(200, 200, 200, 0.064);
+}
+.for_login_forum div form span{
+    width: 270px;
+    color: var(--burger_col);
+    font-weight: 500;
+    font-size: var(--font-PARA-SIZE);
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
+.for_login_forum div form .upper_spacing{
+    margin-top: 15px;
+}
+.for_login_forum div form input:focus{
+    border: none;
+    box-shadow: 0 0 5px 2px var(--box_shadow);
+}
+.for_login_forum div .seprate_horizontal{
+    margin: 15px 0 10px 0;
+}
+.for_login_forum div .vertical-spacing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.for_login_forum div .vertical-spacing a{
+    width: 270px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--box_shadow);
+    border-radius: 5px;
+}

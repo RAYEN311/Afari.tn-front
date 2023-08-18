@@ -1,7 +1,6 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
-// import DefaultLayout from "./components/DefaultLayout";
 import Home from "./views/home";
-import WaitScreen from "./views/wait_screen";
+import Login from "./views/login";
 // import NotFound from "./views/NotFound";
 
 
@@ -9,6 +8,10 @@ const router = createBrowserRouter([
   {
     path: '',
     element: <Home/>
+  },
+  {
+    path: '/login',
+    element: <Login/>
   },
   
 ])

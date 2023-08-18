@@ -41,7 +41,7 @@
     transform: rotate(-90deg);
     border: none;
     background-color: transparent;
-    box-shadow: 0 0 0 0 black;
+    box-shadow: none;
   }
 
 .menu__icon:hover span {

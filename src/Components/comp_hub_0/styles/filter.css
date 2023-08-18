@@ -57,51 +57,51 @@
   
   .wave-group .label-char0 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed0) * .05s);
+    transition-delay: calc(var(--letterfill-speed0) * .03s);
   }
   .wave-group .label-char1 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed1) * .05s);
+    transition-delay: calc(var(--letterfill-speed1) * .03s);
   }
   .wave-group .label-char2 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed2) * .05s);
+    transition-delay: calc(var(--letterfill-speed2) * .03s);
   }
   .wave-group .label-char3 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed3) * .05s);
+    transition-delay: calc(var(--letterfill-speed3) * .03s);
   }
   .wave-group .label-char4 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed4) * .05s);
+    transition-delay: calc(var(--letterfill-speed4) * .03s);
   }
   .wave-group .label-char5 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed5) * .05s);
+    transition-delay: calc(var(--letterfill-speed5) * .03s);
   }
   .wave-group .label-char6 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed6) * .05s);
+    transition-delay: calc(var(--letterfill-speed6) * .03s);
   }
   .wave-group .label-char7 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed7) * .05s);
+    transition-delay: calc(var(--letterfill-speed7) * .03s);
   }
   .wave-group .label-char8 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed8) * .05s);
+    transition-delay: calc(var(--letterfill-speed8) * .03s);
   }
   .wave-group .label-char9 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed9) * .05s);
+    transition-delay: calc(var(--letterfill-speed9) * .03s);
   }
   .wave-group .label-char10 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed10) * .05s);
+    transition-delay: calc(var(--letterfill-speed10) * .03s);
   }
   .wave-group .label-char11 {
     transition: 0.2s ease all;
-    transition-delay: calc(var(--letterfill-speed11) * .05s);
+    transition-delay: calc(var(--letterfill-speed11) * .03s);
   }
   
   .wave-group .input:focus ~ label .label-char {

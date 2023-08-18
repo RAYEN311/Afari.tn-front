@@ -26,3 +26,6 @@ axiosClient.interceptors.response.use((response) => {
 })
 
 export default axiosClient
+
+
+document.getElementById("dfg").style.cssText

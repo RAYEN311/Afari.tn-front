@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM  from "react-dom"
 
 import './styles/dropdown_log.css'
-
+import { Link } from "react-router-dom"
 import ava from "../../assets/images/happ.png"
 
 export default function DropLog(){
@@ -17,17 +17,9 @@ return(
                 </div>
                 <div name="drop_log" className="drop_main_state">
                 <div name="drop_log" id="drop_main_state">
-                        <button>
-                                Info
-                        </button>
-                
-                        <button>
-                                Login
-                        </button>
-
-                        <button className="blue_col upper">
-                                Register
-                        </button>
+                <Link className="button" to="/login">login</Link>
+                <span>or</span>
+                <Link className="button blue_col upper" to="/login">register</Link>
              </div>
              </div>
                 </div>
