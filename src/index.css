@@ -28,7 +28,7 @@
     --scale-y: 1 ;
 
 
-    --main-height: calc(92vh * var(--scale-y));
+    --main-height: calc( calc(100vh - 60px) * var(--scale-y));
     --drawer-height: var(--main-height);
     --nav-height:calc(calc(100vh * var(--scale-y)) - var(--main-height));
     --top-nav : calc(calc(100vh * var(--scale-y)) - calc(var(--main-height) + var(--nav-height))) ;
@@ -41,7 +41,7 @@
     --main-width-mobile: 100vw ;
     --drawer-width-computer : 320px;
     --main-width-computer: calc(calc(100vw * var(--preority-x)) - var(--drawer-width-computer)) ;
-    --drawer-width-mobile : 40vh;
+    --drawer-width-mobile : 280px;
     --main-left-computer: var(--drawer-width-computer);
     --main-left-mobile: 0;
     --drawer-left-computer : 0vw;
@@ -86,19 +86,19 @@
       width: var(--title_wd);
       margin-left: calc(calc(var(--drawer-width-computer) / 2 )  - calc(var(--title_wd)/2)) ;        
       text-transform: lowercase;
-      font-size: 4vh;
+      font-size: var(--font-tit-SIZE);
       font-family: var(--font-titles) !important ;
       -webkit-user-select: none;
       cursor: pointer;
     }
     .after_tit{
-      font-size: 2vh;
+      font-size: var(--font-PARA-SIZE);
       font-weight: 500;
-      margin-top: 1.2vh;
+      margin-top: 8px;
     }
    .title_img{
-        height: 5vh;
-        width:5vh;
+        height: 32px;
+        width: auto;
         margin:0;
         padding:0;
         margin-top:5px;
@@ -294,7 +294,7 @@
       width: 90%;
       font-size: var(--font-PARA-SIZE);
       margin: auto;
-      margin-top: 8vh;
+      margin-top: 50px;
       margin-bottom: 0;
       color: var(--burger_col);
       padding: 10px;
@@ -579,10 +579,10 @@
       width: calc(var(--drawer-width-mobile) - var(--spacing));
       }  
     .settings span , .filter span{
-        font-size: 2.5vh;
+        font-size: 17px;
     } 
     .sett_svg , .settings span , filter span{
-        height: 4vh;
+        height: 24px;
     }
 
     .main{
