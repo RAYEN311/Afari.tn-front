@@ -483,6 +483,9 @@
     visibility: visible;
     }
   @media (min-width:950px) {
+    :root{
+      --main-height: calc( calc(100vh - 50px) * var(--scale-y));
+    }
     .burger{
         display: none;
     }
@@ -505,9 +508,12 @@
         border: 1px solid var(--box_shadow);
     }
     .nav .subnav .search_but{
-      height: calc(calc( var(--nav-height) * 0.75) + 2px);  
       border: none;
       box-shadow: 0 0 3px 2px var(--box_shadow);
+      height: 38px;
+    }
+    .nav .subnav .search_but:active{
+      scale: 0.95;
     }
 }
   @media (max-width:950px) {

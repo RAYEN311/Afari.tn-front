@@ -19,7 +19,7 @@ return(
                 <div name="drop_log" id="drop_main_state">
                 <Link className="button" to="/login">login</Link>
                 <span>or</span>
-                <Link className="button blue_col upper" to="/login">register</Link>
+                <Link className="button blue_col upper" to="/register">register</Link>
              </div>
              </div>
                 </div>

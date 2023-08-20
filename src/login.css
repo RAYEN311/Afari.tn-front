@@ -6,6 +6,9 @@
     justify-content:center;
     flex-direction: column;
 }
+.padd_reg{
+padding-top: 70px;
+}
 .for_login_forum div{
 }
 .for_login_forum div form{
@@ -25,14 +28,12 @@
     font-size: var(--font-tit-SIZE);
     margin-bottom: 10px;
 }
-.for_login_forum div form svg{
+.for_login_forum div form .back{
     cursor: pointer;
-    padding: 5px;
     height: 26px;
     width: 26px;
-    border-radius: 50%;
     position: absolute;
-    transform: translate(-60px, 14px);
+    border-radius: 50%;
 }
 .for_login_forum div form svg:hover{
     background-color: var(--box_shadow);
