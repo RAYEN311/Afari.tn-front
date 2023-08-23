@@ -1,4 +1,5 @@
-import React from "react";
+import React , {useState} from "react";
+import axios from 'axios';
 
 import "../login.css" ;
 import "../Components/comp_hub_0/styles/sudo_button.css"
@@ -7,30 +8,58 @@ import LogoCopy from "../Components/comp_hub_0/logoCopy";
 
 
 export default function Register(){
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [password, setPassword] = useState('');
+    const [passwordConfirm, setPasswordConfirm] = useState('');
+    const handleRegister = () => {
+      // Send login credentials to your API using axios
+        axios.post('http://localhost:8000/api/register', {
+        name :name,
+        email: email,
+        phone:phone ,
+        password: password,
+      })
+      .then(response => {
+        // Handle successful login here
+        console.log('Logged in:', response.data);
+      })
+      .catch(error => {
+        // Handle login error here
+        console.error('Login error:', error);
+      });
+    };
     return(
+        
         <body className="for_login_forum padd_reg">   
+        <div className="empty_sp_v"></div>
+
         <LogoCopy Title={"fari"}></LogoCopy>
         <div class="login-forum">
-        <form action="/" className="">
+        <div className='form'>
             <h2> 
              Account Creation</h2>
+            <label htmlFor="text" >name</label>
+            <input type="text"  required onInput={e => setName(e.target.value)}/>
             <label htmlFor="email" >Email Adress</label>
-            <input type="email" required />
+            <input type="email" required onInput={e => setEmail(e.target.value)}/>
             <label htmlFor="number" >Phone Number </label>
             {/* <input type="number" required placeholder="Exp: 35153185"/> */}
-            <input type="number" required />
+            <input type="number" required onInput={e => setPhone(e.target.value)}/>
             <label htmlFor="password" >password</label>
-            <input type="password" required/>
+            <input type="password" required onInput={e => setPassword(e.target.value)}/>
             <label htmlFor="password" >Confirm password</label>
-            <input type="password" required/>
-            <input type="submit" value={"Register"} className="sudo_button upper_spacing"/>
+            <input type="password" required onInput={e => setPasswordConfirm(e.target.value)}/>
+            <button onClick={handleRegister} className="sudo_button upper_spacing">Register</button>
             <span>en passant vote demand et command sur afari vous accepter <a href="">les conditions generals</a> de afari consulter notre <a href=""> notice de protection </a> de vos inforamtion personelle , notre <a href="">notice cookies </a>et notre <a href="">notice annance </a>pub basser sur vos center d intert <br /><br /><li><a href="">need a help?</a></li></span>
-        </form>
+        </div>
         <hr className="seprate_horizontal"/>
         <div className="vertical-spacing">
         {/* <a href="">Home </a> */}
         <a href="/login">Login</a>
         </div>
+        <div className="empty_sp_v"></div>
     </div>
         </body>
     )

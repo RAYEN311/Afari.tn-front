@@ -39,7 +39,7 @@
 
     --nav-width: 100vw ;
     --main-width-mobile: 100vw ;
-    --drawer-width-computer : 320px;
+    --drawer-width-computer : 340px;
     --main-width-computer: calc(calc(100vw * var(--preority-x)) - var(--drawer-width-computer)) ;
     --drawer-width-mobile : 280px;
     --main-left-computer: var(--drawer-width-computer);
@@ -87,6 +87,7 @@
       margin-left: calc(calc(var(--drawer-width-computer) / 2 )  - calc(var(--title_wd)/2)) ;        
       text-transform: lowercase;
       font-size: var(--font-tit-SIZE);
+      font-weight: bold;
       font-family: var(--font-titles) !important ;
       -webkit-user-select: none;
       cursor: pointer;
@@ -94,7 +95,7 @@
     .after_tit{
       font-size: var(--font-PARA-SIZE);
       font-weight: 500;
-      margin-top: 8px;
+      margin-top: 36px;
     }
    .title_img{
         height: 32px;
@@ -182,7 +183,7 @@
     cursor: pointer;
   }
   .subavatar{
-    height: calc(var(--nav-height)/ 1.25);
+    height: calc(var(--nav-height)/ 1.7);
     border: 1px solid var(--box_shadow);
     padding: 5px ;
     border-radius: 5px;
@@ -281,9 +282,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1vh;
         padding-left: 10px;
-        --spacing :  5px;
+        --spacing :  15px;
+        height: 40px;
         width: calc( var(--drawer-width-computer) - var(--spacing));
         background-color: var(--primary);
         z-index: 10000;
@@ -291,7 +292,7 @@
     }
     .intro_bellow_sett{
       border:1px solid var(--box_shadow);
-      width: 90%;
+      width: 84%;
       font-size: var(--font-PARA-SIZE);
       margin: auto;
       margin-top: 50px;
@@ -312,13 +313,14 @@
     }
     .filter svg{
       margin-top: 5px;
-      height: 24px;
-      width: 24px;
+      height: 8px;
+      width: 8px;
       padding: 5px;
       color: black;
-      border:1px solid var(--box_shadow);
+      border:2px solid #444;
       border-radius: 50%;
       cursor: pointer;
+      transform: translateX(2px);
     }
     .categories{
       margin:3vh 1.5vh 0 1.5vh;
@@ -345,7 +347,8 @@
         stroke-linecap:round;
         stroke-linejoin:round;
         stroke-width:32px;
-        margin-top: 3px;
+        margin-top: 7px;
+        margin-right: 7px;
         cursor: pointer;
         transition: transform 300ms;
     }
@@ -384,7 +387,7 @@
     padding : 5vh 0 10vh 0;
     --background-sub-nav: rgba(0, 0, 0, 0.7);
     background: linear-gradient(var(--background-sub-nav), var(--background-sub-nav)),
-    url("./assets/images/european-cars.png");
+    url("./assets/images/Afari_achat.png");
     background-size: cover;
   }
   
@@ -457,16 +460,18 @@
   }
   .search_but{
     height: 42px;
-      margin-left: 10px;
-      background: var(--second);
-      border: 2px solid rgb(0, 145, 255);
-      color: var(--font_but_col);
-      text-transform: uppercase;
-      border-radius: 5px;
-      cursor: pointer;
-      padding: 0 20px 0 20px;
-      /* box-shadow: 0 0 5px 2px var(--box_shadow); */
-    }
+    margin-left: 10px;
+    background: var(--second);
+    color: var(--font_but_col);
+    border : 1px solid rgba(255, 255, 255, 0.439) ;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 20px 0 20px;
+  }
+  .search_but:active{
+    scale: 0.95;
+  }
 
    .product_searched{
     position: absolute;
@@ -532,7 +537,7 @@
       padding : 5vh 0 10vh 0;
       --background-sub-nav: rgba(0, 0, 0, 0.7);
       background: linear-gradient(var(--background-sub-nav), var(--background-sub-nav)),
-        url("./assets/images/european-cars.png");
+        url("./assets/images/Afari_achat.png");
         background-size: cover;
       }
       .main .subnav section{
@@ -596,11 +601,14 @@
         left: var( --main-left-mobile);
     }
     .form_search {
-        --timing: 0.3s;
+      --timing: 0.3s;
         --width-of-input: calc( var(--main-width-mobile) / 1.7);
+      }
+    .form_search {
+
     }
     .product_searched{
-     transform: translateY(5vh);
+     transform: translateY(45px);
      width: calc( var(--main-width-mobile) / 1.15) ;
      right: calc(calc( calc( var(--main-width-mobile) - calc( var(--main-width-mobile) / 1.15) )) / 2 ) ;
     }

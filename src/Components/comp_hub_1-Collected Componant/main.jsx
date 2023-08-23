@@ -1,4 +1,7 @@
 import React from "react"
+import Main_buttons from "../comp_hub_2-main_construct/buttons_bar";
+import Sells_boxes from "../comp_hub_2-main_construct/sell_post";
+
 
 export default function Main(){
     function prod_state_III()
@@ -37,6 +40,8 @@ export default function Main(){
 
      </div>
      </div>
+     <Main_buttons></Main_buttons>
+     <Sells_boxes></Sells_boxes>
     </section>
     )
 }

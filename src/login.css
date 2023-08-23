@@ -1,17 +1,8 @@
-.for_login_forum{
-    height: 90vh;
-    width:100vw;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction: column;
-}
+
 .padd_reg{
-padding-top: 70px;
+    padding-top: 150px;
 }
-.for_login_forum div{
-}
-.for_login_forum div form{
+.for_login_forum div .form{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -21,32 +12,32 @@ padding-top: 70px;
     border-radius:5px;
     box-shadow: 0 0 5px 2px var(--box_shadow);
 }
-.for_login_forum div form h2{
+.for_login_forum div .form h2{
     color: black;
     margin: auto;
     font-weight: 500;
-    font-size: var(--font-tit-SIZE);
+    font-size: 20px;
     margin-bottom: 10px;
 }
-.for_login_forum div form .back{
+.for_login_forum div .form .back{
     cursor: pointer;
     height: 26px;
     width: 26px;
     position: absolute;
     border-radius: 50%;
 }
-.for_login_forum div form svg:hover{
+.for_login_forum div .form svg:hover{
     background-color: var(--box_shadow);
     color: black;
 }
-.for_login_forum div form input{
+.for_login_forum div .form input{
     height: 35px;
     width: 260px;
     border-radius: 5px;
     border: 1px solid var(--scrool_col);
     background-color: rgba(200, 200, 200, 0.064);
 }
-.for_login_forum div form span{
+.for_login_forum div .form span{
     width: 270px;
     color: var(--burger_col);
     font-weight: 500;
@@ -54,10 +45,10 @@ padding-top: 70px;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 10px;
 }
-.for_login_forum div form .upper_spacing{
+.for_login_forum div .form .upper_spacing{
     margin-top: 15px;
 }
-.for_login_forum div form input:focus{
+.for_login_forum div .form input:focus{
     border: none;
     box-shadow: 0 0 5px 2px var(--box_shadow);
 }
@@ -77,4 +68,8 @@ padding-top: 70px;
     justify-content: center;
     border: 1px solid var(--box_shadow);
     border-radius: 5px;
+}
+.empty_sp_v{
+    height: 50px;
+    width: 50px;
 }

@@ -1,0 +1,45 @@
+.main_buttons_bar{
+    width: calc(100% - 60px)  ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+.main_buttons_bar .button_bar{
+    margin: 5px;
+    border: 1px solid var(--burger_col);
+    height: 40px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+.main_buttons_bar .button_bar:active{
+    scale: 0.95;
+}
+.main_buttons_bar .yellow{
+    border: 1px solid yellow;
+}
+.main_buttons_bar .red{
+    border: 1px solid red;
+}
+.main_buttons_bar .green{
+    border: 1px solid green;
+}
+.main_buttons_bar .gold{
+    border: 1px solid gold;
+}
+.main_buttons_bar .blue{ 
+    border: 1px solid blue;
+}
+
+@media (max-width:950px){
+    .main_buttons_bar{
+        flex-direction: column;
+    }
+    .main_buttons_bar .sec_sub_main_butt_bar_i{
+        justify-content: space-between;
+    }
+    .main_buttons_bar .sec_sub_main_butt_bar_ii{
+        justify-content: space-between;
+    }
+    
+}

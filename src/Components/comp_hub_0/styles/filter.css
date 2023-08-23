@@ -34,7 +34,7 @@
     font-size: 12px;
     padding: 5px 5px 10px 5px;
     display: block;
-    --inp_fill_global_width: 100%;
+    --inp_fill_global_width: 90%;
     width: var(--inp_fill_global_width);
     border: none;
     border-bottom: 1px solid #515151;
@@ -139,4 +139,15 @@
   .wave-group .input:focus ~ .bar:before,
   .wave-group .input:focus ~ .bar:after {
     width: var(--inp_fill_global_width);
+  }
+  .location_input{
+    width: calc(var(--drawer-width-computer)/2.32)!important;
+  }
+  .location_input{
+    width: calc(var(--drawer-width-computer)/2.12)!important;
+  }
+  @media (max-width:950px) {    
+    .location_input{
+      width: calc(var(--drawer-width-mobile)/2.32)!important;
+    }
   }

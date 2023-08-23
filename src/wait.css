@@ -9,14 +9,19 @@ body{
     flex-direction : column;
 }
 .title_copy{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-transform: uppercase;
-      font-size: 4vh;
-      font-family: var(--font-titles) !important ;
-      -webkit-user-select: none;
-      color:black;
+  --title_wd: 21vw;
+  color: var(--titles);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--title_wd); 
+  text-transform: lowercase;
+  font-size: var(--font-tit-SIZE);
+  font-weight: bold;
+  font-family: var(--font-titles) !important ;
+  -webkit-user-select: none;
+  cursor: pointer;
+  transform: translateY(20px);
     }
 .loader {
     display: block;
