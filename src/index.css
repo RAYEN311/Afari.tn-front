@@ -63,6 +63,10 @@
     font-family:var(--font-buttons) !important ;
     font-weight: 600;
   }
+  a{
+    text-decoration: none!important;
+    color: rgb(0, 140, 255)!important;
+  }
   input{
     color: var(--font_col)!important;
   }
@@ -374,7 +378,7 @@
     }
     .main{
       position: absolute;
-      height: var(--main-height);
+      min-height: var(--main-height);
       width: var(--main-width-computer);
       left: var(--main-left-computer);
       top: var(--top-main);

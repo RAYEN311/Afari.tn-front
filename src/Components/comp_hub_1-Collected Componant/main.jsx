@@ -1,6 +1,6 @@
 import React from "react"
 import Main_buttons from "../comp_hub_2-main_construct/buttons_bar";
-import Sells_boxes from "../comp_hub_2-main_construct/sell_post";
+import Sells_boxe from "../comp_hub_2-main_construct/sell_post";
 
 
 export default function Main(){
@@ -13,7 +13,81 @@ export default function Main(){
         prod_search_2.style.minHeight = "0"
         prod_search_2.style.height = "0" ;
     }
+    //////////////////////////////////////////////////////////////
+    // object insted of data from database 
 
+    let objects = [
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': 'http://localhost:3000/src/assets/images/min/logo.png',
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': 'http://localhost:3000/src/assets/images/min/logo.png',
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': 'http://localhost:3000/src/assets/images/min/logo.png',
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': 'http://localhost:3000/src/assets/images/min/logo.png',
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
+        'msg' : '',
+        'price': '220 dt',
+        },
+    ]
     return(
     <section className="main">
     <div className="subnav">
@@ -41,7 +115,12 @@ export default function Main(){
      </div>
      </div>
      <Main_buttons></Main_buttons>
-     <Sells_boxes></Sells_boxes>
+     <div className="sell_boxs">{
+        objects.map((object) =>(
+            <Sells_boxe object={object}></Sells_boxe>
+        ))
+     }
+     </div>
     </section>
     )
 }

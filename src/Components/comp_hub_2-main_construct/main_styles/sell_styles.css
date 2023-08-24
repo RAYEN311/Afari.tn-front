@@ -1,5 +1,58 @@
+:root{
+    --sell_box_width: 80vw;
+    --sell_box_height: 140px;
+}
+.sell_boxs{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
 .sell_box{
-    height:100px;
-    width: 250px;
-    background-color: black;
+    height: var(--sell_box_height);
+    width: var(--sell_box_width);
+    margin: 20px;
+    border-radius: 3px;
+    border: 1px solid var(--burger_col);
+    background:linear-gradient(white,whitesmoke);
+}
+.sell_box img{
+    position: absolute;
+    height:calc(var(--sell_box_height)/1.2) ;
+    width:calc(var(--sell_box_height)/1.2) ;
+    transform: translate(-10px,-10px);
+    object-fit: cover;
+    border-radius: 3px;
+}
+.sell_box .sell_title{
+position: absolute;
+transform: translate(calc(var(--sell_box_height)/1.2) , 10px);
+font-size: var(--font-BUTTON-SIZE);
+}
+.sell_box .sell_price{
+position: absolute;
+transform: translate(calc(var(--sell_box_width) - 120%) , 10px);
+color: rgb(0, 101, 0);
+font-size: var(--font-BUTTON-SIZE);
+}
+.sell_box .sell_disc{
+    position: absolute;
+    max-width: calc(var(--sell_box_width) - var(--sell_box_height)/1.2 - 5px);
+    transform: translate(calc(var(--sell_box_height)/1.2) ,calc( var(--sell_box_height) / 4));
+    font-size: var(--font-PARA-SIZE);
+}
+.sell_box .sell_msg{
+    position: absolute;
+    text-align: center;
+    transform: translate(calc(var(--sell_box_width) - 115%) ,calc( var(--sell_box_height) / 1.2)); 
+    font-size: var(--font-PARA-SIZE);
+    
+}
+@media (min-width:950px) {
+    :root{
+        --sell_box_width: 400px;
+        --sell_box_height: 150px;
+    }
 }

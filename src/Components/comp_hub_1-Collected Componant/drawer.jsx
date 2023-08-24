@@ -3,15 +3,17 @@ import { useState } from "react";
 
 import Inp_fl from "../comp_hub_0/filter_input";
 import Cost_min_max from "../comp_hub_0/indicator";
+import MultiRangeSlider from "../comp_hub_0/range_slider";
 import Categories from "../comp_hub_0/subcategorie";
 import "../comp_hub_0/styles/sudo_button.css"
-
+import "../comp_hub_0/styles/range_style.css"
 
 export default function Drawer(){
     var min = 50
     var max = 1150
     // var [min, setmin_price] = useState();
     // var [max, setmax_price] = useState();
+
     const [firstValue, setFirstValue] = useState(120);
     const [secondValue, setSecondValue] = useState(700);
     function handleRanges(value) {
@@ -33,8 +35,13 @@ export default function Drawer(){
     <div className="filter_elements">
     <Inp_fl/>
     <Cost_min_max min={min} max={max}/>
-    {/* <RangeSlider className="fillter_range_cost" min={min} max={max} defaultValue={[120, 600]} onChange={handleRanges} />  */}
-    <h6 className="para_range_fill"><font className="green_font"> {firstValue } Dt</font>  ~  <font className="green_font">{secondValue } dt</font></h6>
+    
+    <MultiRangeSlider
+      min={0}
+      max={1000}
+      onChange={({ min, max }) => console.log(`min = ${min}, max = ${max}`)}
+    />
+    
     <div className="flitring">
     <div className="wave-group">
     <input required="" type='search' id='location_input' className="input location_input" onFocus={e => e.target.value = location} onInput={e => setlocation(e.target.value)} onBlur={e => e.target.value = ''}/>
