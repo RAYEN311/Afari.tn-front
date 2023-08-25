@@ -179,7 +179,7 @@
     position: absolute;
     height: var(--nav-height);
     top: 0;
-    right: 10px;
+    right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,7 +198,7 @@
     align-items: center;
   }
   .subavatar:hover{
-    border: 2px solid rgb(0, 149, 255);
+    border: 1px solid rgb(0, 149, 255);
   }
   .subavatar:active{
     scale: 0.95;

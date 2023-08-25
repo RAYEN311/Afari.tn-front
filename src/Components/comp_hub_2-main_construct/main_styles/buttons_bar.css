@@ -8,8 +8,11 @@
 .main_buttons_bar .button_bar{
     margin: 5px;
     border: 1px solid var(--burger_col);
+    background-color: whitesmoke;
+    border-radius: 2px;
     height: 40px;
     padding: 0 10px 0 10px;
+    text-transform: capitalize;
     cursor: pointer;
 }
 .main_buttons_bar .button_bar:active{
@@ -31,14 +34,23 @@
     border: 1px solid blue;
 }
 
+.main_buttons_bar .sec_sub_main_butt_bar_i button{
+    width: auto;
+}
+.main_buttons_bar .sec_sub_main_butt_bar_ii button{
+    width: 125px;
+    
+}
 @media (max-width:950px){
     .main_buttons_bar{
         flex-direction: column;
     }
     .main_buttons_bar .sec_sub_main_butt_bar_i{
+        display: flex;
         justify-content: space-between;
     }
     .main_buttons_bar .sec_sub_main_butt_bar_ii{
+        display: flex;
         justify-content: space-between;
     }
     

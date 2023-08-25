@@ -15,75 +15,58 @@ export default function Main(){
     }
     //////////////////////////////////////////////////////////////
     // object insted of data from database 
+    
+    const img_loc_pub = 'http://localhost:3000/src/assets/images/Afari_achat.png'
+    // const img_loc_pub = 'https://rayweblistapi.000webhostapp.com/assets/Afari_achat.c86baf17.png'
+    
 
     let objects = [
         {
         'tit' : 'motor',
         'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
-        'img': 'http://localhost:3000/src/assets/images/min/logo.png',
+        'img': `${img_loc_pub}`,
         'msg' : '',
         'price': '220 dt',
         },
         {
         'tit' : 'motor',
         'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
-        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
+        'img': `${img_loc_pub}`,
         'msg' : '',
         'price': '220 dt',
         },
         {
         'tit' : 'motor',
         'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
-        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
+        'img': `${img_loc_pub}`,
         'msg' : '',
         'price': '220 dt',
         },
         {
         'tit' : 'motor',
         'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
-        'img': 'http://localhost:3000/src/assets/images/min/logo.png',
+        'img': `${img_loc_pub}`,
         'msg' : '',
         'price': '220 dt',
         },
         {
         'tit' : 'motor',
         'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
-        'img': 'http://localhost:3000/src/assets/images/min/logo.png',
+        'img': `${img_loc_pub}`,
         'msg' : '',
         'price': '220 dt',
         },
         {
         'tit' : 'motor',
         'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
-        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
+        'img': `${img_loc_pub}`,
         'msg' : '',
         'price': '220 dt',
         },
         {
         'tit' : 'motor',
         'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
-        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
-        'msg' : '',
-        'price': '220 dt',
-        },
-        {
-        'tit' : 'motor',
-        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
-        'img': 'http://localhost:3000/src/assets/images/min/logo.png',
-        'msg' : '',
-        'price': '220 dt',
-        },
-        {
-        'tit' : 'motor',
-        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
-        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
-        'msg' : '',
-        'price': '220 dt',
-        },
-        {
-        'tit' : 'motor',
-        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
-        'img': 'http://localhost:3000/src/assets/images/Afari_achat.png',
+        'img': `${img_loc_pub}`,
         'msg' : '',
         'price': '220 dt',
         },
