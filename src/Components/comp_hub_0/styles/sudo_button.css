@@ -10,6 +10,7 @@
     border-radius: 8px!important;
     box-shadow: 0 0 5px 2px var(--box_shadow);
     text-align: center;
+    border: none!important;
 }
 .sudo_button:active{
     scale: 0.98;

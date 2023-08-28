@@ -10,7 +10,7 @@ export default function WaitScreen(){
     return(
         <body className="Wait">
             <LogoCopy Title={"fari"}></LogoCopy>
-            <div class="loader"></div>
+            <div class="loader_main"></div>
         </body>       
      ) 
 }

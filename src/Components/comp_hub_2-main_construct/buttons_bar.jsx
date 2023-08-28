@@ -10,8 +10,8 @@ export default function Main_buttons(porps){
         <button className="button_bar">rent</button>
         </div>
         <div className="sec_sub_main_butt_bar_ii">
-        <button className="button_bar">poster un annoce</button>
-        <button className="button_bar">poster un publication </button>
+        <button className="button_bar gold">poster un annoce</button>
+        <button className="button_bar green">poster un publication </button>
         </div>
     </div>
    )

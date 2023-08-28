@@ -12,7 +12,7 @@ export default function Home(){
 
     const [showHome, setShowHome] = useState(false);
     useEffect(() => {
-    const delay = 500; // 1 second in milliseconds
+    const delay = 400; 
 
     const timeoutId = setTimeout(() => {
       setShowHome(true);
