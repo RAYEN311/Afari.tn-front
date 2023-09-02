@@ -16,11 +16,15 @@
     cursor: pointer;
     border: none;
 }
-.main_buttons_bar .button_bar:hover{
+.main_buttons_bar .button_bar:active{
     background-color:var(--second);
-    color: white;
+    color: white!important;
     box-shadow: 0 0 7px 2px rgb(187, 187, 187);
+    scale: 0.95;
 } 
+.main_buttons_bar .button_bar:hover{
+    box-shadow: 0 0 7px 2px grey ;   
+}
 /* .main_buttons_bar .button_bar:active{
     scale: 0.95;
 }

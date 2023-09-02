@@ -83,6 +83,7 @@
     }
   .title{
       --title_wd: 21vw;
+      margin-top: calc(var(--nav-height)/2.2);
       color: var(--titles);
       display: flex;
       align-items: center;
@@ -501,7 +502,7 @@
     .nav .subnav{
         position: absolute;
         top: calc(calc( var(--nav-height)/2) - calc( calc( var(--nav-height) * 0.8)/2));
-        left: calc(calc(var(--nav-width )/ 2) - calc( calc( var(--main-width-computer) / 3)/2));
+        left: calc(calc(var(--nav-width )/ 2) - calc( calc( var(--main-width-computer) / 3.5)/2));
         display: flex;
         justify-content: center;
         margin-top: 0;

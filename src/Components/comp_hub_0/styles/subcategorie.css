@@ -17,9 +17,16 @@
     font-weight: 600;
     cursor: pointer;
 }
+.subcategories .subcategorie .mean_container{
+    display: flex;
+    align-items: center;
+}
+.subcategories .subcategorie .mean_container svg{
+    margin-right: 10px;
+}
 .subcategories .subcategorie:hover{
     color:white;
-    background-color: rgb(35, 35, 35);
+    background-color: var(--burger_col);
 }
 .subcategories .subcategorie:active{
     background-color: black;

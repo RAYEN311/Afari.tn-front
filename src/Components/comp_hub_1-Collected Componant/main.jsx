@@ -70,6 +70,62 @@ export default function Main(){
         'msg' : '',
         'price': '220 dt',
         },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': `${img_loc_pub}`,
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': `${img_loc_pub}`,
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': `${img_loc_pub}`,
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': `${img_loc_pub}`,
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': `${img_loc_pub}`,
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': `${img_loc_pub}`,
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': `${img_loc_pub}`,
+        'msg' : '',
+        'price': '220 dt',
+        },
+        {
+        'tit' : 'motor',
+        'dis' : 'Lorem ipsum tunisian motor with dark quality dolor sit amet consectetur adipisicing elit.',
+        'img': `${img_loc_pub}`,
+        'msg' : '',
+        'price': '220 dt',
+        },
     ]
     return(
     <section className="main">
