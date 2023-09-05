@@ -1,9 +1,12 @@
 import React from "react";
+import useSound from 'use-sound';
 
 
 import Logo from "../comp_hub_0/logo";
 import DropLog from "../comp_hub_0/dropdown_log";
 import DropTag from "../comp_hub_0/dropdown_tag";
+
+import digi_burger from '../../assets/digi_burger.mp3';
 
 
 export default function Nav(porps){
@@ -31,10 +34,11 @@ export default function Nav(porps){
         }
     }
     var title = 'fari'
+    const [play] = useSound(digi_burger);
     return(
     <section className="nav">
     <label className="burger" for="burger">
-    <input type="checkbox" id="burger" onChange={drw_cn_bur}/>
+    <input type="checkbox"  id="burger" onChange={drw_cn_bur} onClick={play}/>
     <span></span>
     <span></span>
     <span></span>

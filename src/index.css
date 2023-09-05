@@ -80,6 +80,7 @@
       background-color: var(--dr_nv_cg_col);
       box-shadow: 0 1px 4px 1px var(--box_shadow);
       z-index: 500;
+
     }
   .title{
       --title_wd: 21vw;
