@@ -14,7 +14,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--title_wd); 
   text-transform: lowercase;
   font-size: var(--font-tit-SIZE);
   font-weight: bold;

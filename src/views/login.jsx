@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import "../login.css" ;
 import "../Components/comp_hub_0/styles/sudo_button.css"
-
+import { Link } from 'react-router-dom';
 import LogoCopy from "../Components/comp_hub_0/logoCopy";
 
 
@@ -56,7 +56,7 @@ export default function Login(){
           }
          return(
         <body className="for_login_forum"> 
-        <LogoCopy Title={"fari"}></LogoCopy>
+        <Link to='/'><LogoCopy className="title-log" Title={"fari"}></LogoCopy></Link>
         <div class="login-forum">
         <div className='form'>
             <h2> 
@@ -72,7 +72,7 @@ export default function Login(){
         <hr className="seprate_horizontal"/>
         <div className="vertical-spacing">
         {/* <a href="">Home </a> */}
-        <a href="/register">register</a>
+        <Link to='/register'>register</Link>
         </div>
         <div className="empty_sp_v"></div>
     </div>

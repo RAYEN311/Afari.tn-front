@@ -16,8 +16,8 @@ export default function Main(){
     //////////////////////////////////////////////////////////////
     // object insted of data from database 
     
-    const img_loc_pub = 'http://localhost:3000/src/assets/images/Afari_achat.png'
-    // const img_loc_pub = 'https://rayweblistapi.000webhostapp.com/assets/Afari_achat.c86baf17.png'
+    // const img_loc_pub = 'http://localhost:3000/src/assets/images/Afari_achat.png'
+    const img_loc_pub = 'https://rayweblistapi.000webhostapp.com/assets/Afari_achat.c86baf17.png'
     
 
     let objects = [

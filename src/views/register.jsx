@@ -1,4 +1,5 @@
 import React , {useState} from "react";
+import {Link} from "react-router-dom";
 import axios from 'axios';
 
 import "../login.css" ;
@@ -32,10 +33,9 @@ export default function Register(){
     };
     return(
         
-        <body className="for_login_forum padd_reg">   
-        <div className="empty_sp_v"></div>
-
-        <LogoCopy Title={"fari"}></LogoCopy>
+        <body className="for_login_forum">   
+ 
+        <Link to='/'><LogoCopy Title={"fari"}></LogoCopy></Link>
         <div class="login-forum">
         <div className='form'>
             <h2> 
@@ -56,8 +56,7 @@ export default function Register(){
         </div>
         <hr className="seprate_horizontal"/>
         <div className="vertical-spacing">
-        {/* <a href="">Home </a> */}
-        <a href="/login">Login</a>
+        <Link to='/login'>Login</Link>
         </div>
         <div className="empty_sp_v"></div>
     </div>

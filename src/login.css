@@ -11,6 +11,8 @@
     padding: 15px;
     border-radius:5px;
     box-shadow: 0 0 5px 2px var(--box_shadow);
+    width: 270px;
+    margin:auto;
 }
 .for_login_forum div .form h2{
     color: black;
