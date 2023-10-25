@@ -4,4 +4,6 @@ body{
     justify-content: center;
     flex-direction: column;
     color: var(--font_col);
+background : red ;
+
 }
