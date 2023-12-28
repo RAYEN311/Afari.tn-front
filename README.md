@@ -1,3 +1,3 @@
 # Afari.tn-front
 Afari.tn E-commerce  ( web version ) frontend
-#27/12 progress
+#28/12 progress
