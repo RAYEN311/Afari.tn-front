@@ -2,20 +2,14 @@
     --sell_box_width: 80vw;
     --sell_box_height: 140px;
 }
-.sell_boxs{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 .sell_box{
     height: var(--sell_box_height);
     width: var(--sell_box_width);
     margin: 10px;
     border-radius: 3px;
-    /* border: 1px solid var(--burger_col); */
-    background:linear-gradient(white,whitesmoke);
+    border: 1px solid rgb(201, 201, 201);
+    background:linear-gradient(white,whitesmoke);  
+    border-top: none;      
     cursor: pointer;
 }
 .sell_box img{
@@ -25,6 +19,10 @@
     transform: translate(-20px,-15px);
     object-fit: cover;
     border-radius: 3px;
+    /* border: 1px solid rgb(201, 201, 201);
+    border-right: none;
+    border-bottom: none; */
+    box-shadow: 1px 1px 5px 1px rgb(228, 228, 228);
 }
 .sell_box .sell_title{
 position: absolute;
@@ -33,7 +31,7 @@ font-size: var(--font-BUTTON-SIZE);
 }
 .sell_box .sell_price{
     position: absolute;
-    transform: translate(calc(var(--sell_box_width) - 120%) , 10px);
+    transform: translate(calc(var(--sell_box_width) - 110%) , 10px);
 color: rgb(0, 101, 0);
 font-size: var(--font-BUTTON-SIZE);
 }
@@ -42,6 +40,10 @@ font-size: var(--font-BUTTON-SIZE);
     max-width: calc(var(--sell_box_width) - var(--sell_box_height)/1.1 - 5px);
     transform: translate(calc(var(--sell_box_height)/1.2) ,calc( var(--sell_box_height) / 4));
     font-size: var(--font-PARA-SIZE);
+    display : -webkit-box ;
+    -webkit-line-clamp: 3 ;
+    -webkit-box-orient :vertical;
+    overflow:hidden;
 }
 .sell_box .sell_msg{
     position: absolute;
@@ -50,6 +52,22 @@ font-size: var(--font-BUTTON-SIZE);
     font-size: var(--font-PARA-SIZE);
     
 }
+.sell_box .comment{
+    position: absolute;
+    transform: translate(calc(var(--sell_box_width) / 1.15) ,calc( var(--sell_box_height) / 1.6)); 
+    cursor: pointer;
+}
+.sell_box .save{
+    position: absolute;
+    transform: translate(calc(var(--sell_box_width) / 1.3) ,calc( var(--sell_box_height) / 1.6)); 
+    cursor: pointer;
+}
+.sc-03{
+    scale: 0.4;
+}
+
+
+
 @media (min-width:950px) {
     :root{
         --sell_box_width: 400px;

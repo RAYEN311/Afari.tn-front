@@ -58,16 +58,16 @@ export default function Login(){
         <body className="for_login_forum"> 
         <Link to='/'><LogoCopy className="title-log" Title={"fari"}></LogoCopy></Link>
         <div class="login-forum">
-        <div className='form'>
+        <div className='form log_form'>
             <h2> 
              identifcation</h2>
             <label htmlFor="text" >Phone Number / Email Adress</label>
             {/* <input type="text" required placeholder="Exp: 35153185"/> */}
-            <input type="text" id='email' required onInput={e => setEmail(e.target.value)}/>
+            <input className='log_inp' type="text" id='email' required onInput={e => setEmail(e.target.value)}/>
             <label htmlFor="password" >password</label>
-            <input type="password" id='password' required onInput={e => setPassword(e.target.value)}/>
-            <button onClick={handleLogin} className="sudo_button upper_spacing">Login</button>
-            <span>en passant vote demand et command sur afari vous accepter <a href="">les conditions generals</a> de afari consulter notre <a href=""> notice de protection </a> de vos inforamtion personelle , notre <a href="">notice cookies </a>et notre <a href="">notice annance </a>pub basser sur vos center d intert <br /><br /><li><a href="">need a help?</a></li></span>
+            <input className='log_inp' type="password" id='password' required onInput={e => setPassword(e.target.value)}/>
+            <button onClick={handleLogin} className="sudo_button log_butt upper_spacing">Login</button>
+            <span className='span_log'>en passant vote demand et command sur afari vous accepter <a href="">les conditions generals</a> de afari consulter notre <a href=""> notice de protection </a> de vos inforamtion personelle , notre <a href="">notice cookies </a>et notre <a href="">notice annance </a>pub basser sur vos center d intert <br /><br /><li><a href="">need a help?</a></li></span>
         </div>
         <hr className="seprate_horizontal"/>
         <div className="vertical-spacing">
