@@ -36,7 +36,7 @@ export default function Sells_boxe(porps){
                   <span className="sell_price">{price}</span>
                   
                   <svg className="comment" fill="gray" width="100" height="100" id="comment"><path className="sc-03" d="M74 43c0 1.1-.9 2-2 2H28c-1.1 0-2-.9-2-2s.9-2 2-2h44c1.1 0 2 .9 2 2zm-14.2 8H28c-1.1 0-2 .9-2 2s.9 2 2 2h31.8c1.1 0 2-.9 2-2s-.9-2-2-2zM72 31H28c-1.1 0-2 .9-2 2s.9 2 2 2h44c1.1 0 2-.9 2-2s-.9-2-2-2zm16-12v48c0 1.1-.9 2-2 2H47L33.4 82.4c-.5.6-3.4 1.4-3.4-1.4V69H14c-1.1 0-2-.9-2-2V19c0-1.1.9-2 2-2h72c1.1 0 2 .9 2 2zm-4 2H16v44h16c1.1 0 2 .9 2 2v9.2l10.8-10.6c.4-.4.9-.6 1.4-.6H84V21z"></path><path fill="#00F" d="M1224-510v1684H-560V-510h1784m8-8H-568v1700h1800V-518z"></path></svg>
-                  <svg className="save" fill="gray" width="150" height="100" id="bookmark"><path className="sc-03" d="M69 15H31c-1.1 0-2 .9-2 2v66c0 1.8 2.1 2.7 3.4 1.4L50 66.8l17.6 17.6c1 1 3.4.7 3.4-1.4V17c0-1.1-.9-2-2-2zm-2 63.2L51.4 62.6c-.8-.8-2-.8-2.8 0L33 78.2V19h34v59.2z"></path><path fill="#00F" d="M664-930V754h-1784V-930H664m8-8h-1800V762H672V-938z"></path></svg>
+                  <svg className="save" fill="gray" width="100" height="100" id="bookmark"><path className="sc-03" d="M69 15H31c-1.1 0-2 .9-2 2v66c0 1.8 2.1 2.7 3.4 1.4L50 66.8l17.6 17.6c1 1 3.4.7 3.4-1.4V17c0-1.1-.9-2-2-2zm-2 63.2L51.4 62.6c-.8-.8-2-.8-2.8 0L33 78.2V19h34v59.2z"></path><path fill="#00F" d="M664-930V754h-1784V-930H664m8-8h-1800V762H672V-938z"></path></svg>
               </div>
         )
     }

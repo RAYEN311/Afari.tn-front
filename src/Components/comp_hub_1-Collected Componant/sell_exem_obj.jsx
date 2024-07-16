@@ -1,4 +1,4 @@
-const img_loc_pub = 'http://localhost:3000/src/assets/images/mbk_nitro_stu.jpg'
+const img_loc_pub = '../src/assets/images/636d0f852ceb7abbb4701af423541a012ef1175d.jpg'
 // const img_loc_pub = 'https://rayweblistapi.000webhostapp.com/assets/1.png'
 
 

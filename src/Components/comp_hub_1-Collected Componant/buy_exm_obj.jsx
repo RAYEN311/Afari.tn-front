@@ -1,4 +1,4 @@
-const img_loc_pub = 'http://localhost:3000/src/assets/images/Afari_achat.png'
+const img_loc_pub = '../src/assets/images/Afari_achat.png'
 // const img_loc_pub = 'https://rayweblistapi.000webhostapp.com/assets/2.png'
 
 

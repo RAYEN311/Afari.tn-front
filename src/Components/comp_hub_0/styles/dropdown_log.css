@@ -16,6 +16,10 @@
   transition: opacity 1s linear;
   /* z-index: 100; */
 }
+h6{
+  display:flex;
+  justify-content: center;
+}
 .bl{
   color: black !important;
 }
