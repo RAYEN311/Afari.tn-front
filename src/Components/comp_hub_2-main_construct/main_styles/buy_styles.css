@@ -10,7 +10,7 @@
     cursor: pointer;
     display: block;
 }
-.buy_box img{
+.buy_box img , .img_wait_buy{
     height:100% ;
     width:100% ;
     object-fit: cover;

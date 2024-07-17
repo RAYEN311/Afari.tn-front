@@ -1,5 +1,4 @@
 .right_container {
-    width: var(--right_slid);
     height: calc(100vh - var(--top-main));
     /* background-color:var(--bg_col) ; */
     background-color: white;
@@ -36,8 +35,8 @@
 }
 
 .right_container .devidor img {
-    height: 350px;
-    max-width: 100vw;
+    max-height: 350px;
+    /* max-width: 350px; */
     object-fit: cover;
     user-select: none;
 }
@@ -102,7 +101,20 @@ width: calc( var(--right_slid) - 68px);
     width: 37px;
     height: 37px;
 }
+@media(min-width:700px){
+    .right_container {
+        width: var(--right_slid);
+    }
+}
+@media(max-width:500px){
+    .right_container .devidor img {
+        height: 250px;
 
+    }
+    .right_container .img_devidor {
+        height: 250px;
+    }
+}
 /* 
 <span className="sell_title">{title}</span>
 <span className="sell_disc">{disc}</span>

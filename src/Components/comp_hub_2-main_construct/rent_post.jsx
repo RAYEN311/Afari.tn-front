@@ -43,7 +43,6 @@ export default function Rents_boxe(porps) {
             </div>
             <span className="rent_title">{title}</span>
             <span className="rent_disc">{disc}</span>
-            <a className="rent_msg" href={msglink}>message</a>
             <span className="rent_price">{price}</span>
 
         </div>

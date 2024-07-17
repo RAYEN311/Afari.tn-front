@@ -12,6 +12,16 @@ export default function Login(){
         
         const [loginUrl,setloginurl] = useState('http://localhost:8000/api/login')
 
+
+       let good_con = () =>{
+              connection_ok.style.cssText = "transform:translate(-10%)"
+              setTimeout(()=>{
+                connection_ok.style.cssText = "transform:translate(100%)"
+              },3000)
+       }
+
+
+
         const handleLogin = () => {
 
 
@@ -25,6 +35,7 @@ export default function Login(){
             .then(response => {
               // Handle successful login
               console.log('Logged in:', response.data);
+              good_con();
             })
             .catch(error => {
               // Handle login error 
@@ -44,6 +55,8 @@ export default function Login(){
             .then(response => {
               // Handle successful login
               console.log('Logged in:', response.data);
+              good_con();
+
             })
             .catch(error => {
               // Handle login error 
@@ -55,7 +68,14 @@ export default function Login(){
 
           }
          return(
+
+
+
         <body className="for_login_forum"> 
+
+        
+
+
         <Link to='/'><LogoCopy className="title-log" Title={"fari"}></LogoCopy></Link>
         <div class="login-forum">
         <div className='form log_form'>
@@ -76,6 +96,18 @@ export default function Login(){
         </div>
         <div className="empty_sp_v"></div>
     </div>
+
+
+      <div id="connection_ok" className='connection-ok'>
+        connection reussie 
+      </div>
+      <div className='connection-reject'>
+        echec de connection 
+      </div>
+
+
+
+        
         </body>
     )
 }

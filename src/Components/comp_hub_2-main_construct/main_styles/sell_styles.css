@@ -12,7 +12,7 @@
     border-top: none;      
     cursor: pointer;
 }
-.sell_box img{
+.sell_box img , .wait_img{
     position: absolute;
     height:calc(var(--sell_box_height)/1.1) ;
     width:calc(var(--sell_box_height)/1.1) ;
@@ -69,6 +69,37 @@ font-size: var(--font-BUTTON-SIZE);
 
 
 
+.gradient-wait {  
+      color: transparent !important;
+      position: absolute;
+      transition: none;
+      background: linear-gradient(
+        60deg,
+        hsla(0, 0%, 82%),
+        hsla(0, 0%, 70%),
+        hsla(0, 0%, 78%),
+        hsla(0, 0%, 82%),
+        hsla(0, 0%, 70%),
+        hsla(0, 0%, 78%)
+      );
+      background-size: 300% 300%;
+      background-position: 0 50%;
+      border-radius: 2px ;
+      animation: moveGradient 1s alternate infinite;
+  }
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  .mnr{
+    margin-top: 5px;
+  }
+
+
+
+
 @media (min-width:950px) {
     :root{
         --sell_box_width: 400px;
@@ -81,8 +112,8 @@ font-size: var(--font-BUTTON-SIZE);
     }
     .sell_box img{
         position: absolute;
-        height:calc(var(--sell_box_height)/1.2) ;
-        width:calc(var(--sell_box_height)/1.2) ;
+        height:calc(var(--sell_box_height)/1.1) ;
+        width:calc(var(--sell_box_height)/1.1) ;
     }
     .sell_box .sell_price{
     transform: translate(calc(var(--sell_box_width) / 2 - 10px) , 30px);
